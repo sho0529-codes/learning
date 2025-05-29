@@ -1,0 +1,26 @@
+vs_codeのターミナルで以下（最初だけ）
+
+1, GitHubフォルダに移動
+cd GitHub
+
+2, 作成したリポジトリをクローン
+git clone https://github.com/ユーザー名/リポジトリ名.git
+
+3, リポジトリのフォルダに移動
+cd リポジトリ名
+
+4, vscodeに移動
+code .
+
+
+
+git bashで、以下（更新毎に）
+
+1, ステージング
+git add .
+
+2, コミット
+git commit -m "変更内容の説明"
+
+3, 反映
+git push origin main
