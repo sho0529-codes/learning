@@ -21,6 +21,9 @@ git add .
 
 2, コミット
 git commit -m "変更内容の説明"
+取り消しは
+git reset --soft HEAD^
+
 
 3, 反映
 git push origin main
