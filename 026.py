@@ -17,4 +17,10 @@ for h in range(1, height):
         elif w == width - 1:
             # 右端
             lst[h][w] += max(lst[h - 1][w - 1:w + 1])
+
 print(max(lst[-1]))
+
+# height, width = map(int, input().split())
+# lst = []
+# for _ in range(height):
+#     lst.append(list(map(int, input().split())))
