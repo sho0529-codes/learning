@@ -83,7 +83,7 @@ def route_hantei_lst(lst: list):
                     max_slice_score = max(lst[i][j - 1:])
                 for sabun in [-1, 0, 1]:
                     if (0 <= j + sabun <= width - 1) and (lst[i][j + sabun] == max_slice_score):
-                        lst[i][j + sabun] == 9999
+                        lst[i][j + sabun] = 9999
                 # # スライスの範囲外対策
                 # if j == 0:  # 左端
                 #     max_index = lst[i].index(max(lst[i][:j + 2]))
@@ -106,8 +106,13 @@ def route_hantei_lst(lst: list):
     return lst
 
 lst = random_lst(width, height)
-print(show_lst(lst))
-lst = dp_lst(lst)
+print("lst:")
 print(show_lst(lst))
 
-print(show_lst(route_hantei_lst(lst)))
+lst = dp_lst(lst)
+print("dp:")
+print(show_lst(lst))
+
+lst = show_lst(route_hantei_lst(lst))
+print("route:")
+print(lst)
